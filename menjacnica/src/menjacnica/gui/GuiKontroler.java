@@ -36,7 +36,7 @@ public class GuiKontroler {
 	
 	public static void obrisiValutu(Valuta valuta) {
 		try{
-			glavniProzor.sistem.obrisiValutu(valuta);
+			sistem.obrisiValutu(valuta);
 			
 			glavniProzor.prikaziSveValute();
 		} catch (Exception e1) {
@@ -59,7 +59,7 @@ public class GuiKontroler {
 			valuta.setSrednji(Double.parseDouble(srednji));
 			
 			// Dodavanje valute u kursnu listu
-			glavniProzor.sistem.dodajValutu(valuta);
+			sistem.dodajValutu(valuta);
 
 			// Osvezavanje glavnog prozora
 			glavniProzor.prikaziSveValute();
